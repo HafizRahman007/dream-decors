@@ -1,0 +1,24 @@
+{
+  "name": "dream-decors",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Dream Decors - Premium Wedding Decor & Bespoke Event Management Landing Page",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "vercel": "^54.6.1",
+    "vite": "^5.0.0"
+  }
+}

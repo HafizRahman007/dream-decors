@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Decors - Premium Wedding Decor & Bespoke Event Management Dubai</title>
+  <meta name="description" content="Discover luxury, romance, and opulence. Dream Decors designs bespoke, breathtaking wedding backdrops, Altars, royal mandaps, corporate staging, and birthday theme decors across Dubai & UAE.">
+  <meta name="keywords" content="luxury wedding decor dubai, wedding decoration dubai, bespoke wedding organizers uae, luxury event management dubai, wedding stage design dubai, royal mandap decoration uae, event furniture rental dubai, corporate event styling dubai, birthday party planners dubai, anniversary theme decoration uae, destination wedding decorators dubai, premium floral staging uae, dream decors dubai">
+  <meta name="author" content="Dream Decors UAE">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dream-decors-chi.vercel.app/">
+  <meta property="og:title" content="Dream Decors - Premium Wedding Decor & Bespoke Event Management Dubai">
+  <meta property="og:description" content="Discover luxury, romance, and opulence. Dream Decors curates bespoke, breathtaking wedding backdrops, altars, royal mandap stages, and custom corporate event decors across the UAE.">
+  <meta property="og:image" content="https://dream-decors-chi.vercel.app/assets/wedding_entrance.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dream-decors-chi.vercel.app/">
+  <meta property="twitter:title" content="Dream Decors - Premium Wedding Decor & Bespoke Event Management Dubai">
+  <meta property="twitter:description" content="Discover luxury, romance, and opulence. Dream Decors designs bespoke, breathtaking wedding backdrops, stages, dining banquets, and customized event decors.">
+  <meta property="twitter:image" content="https://dream-decors-chi.vercel.app/assets/wedding_entrance.jpg">
+
+  <link rel="stylesheet" href="style.css?v=1.1.8">
+</head>
+<body>
+
+  <!-- Background rose gold / gold wedding confetti canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ==========================================
+       NAVIGATION BAR HEADER
+       ========================================== -->
+  <header class="main-header">
+    <!-- Top Contact Bar -->
+    <div class="header-top-bar">
+      <div class="container top-bar-container">
+        <div class="top-bar-left" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 0.25rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>dreamdecorsuae@gmail.com</span>
+          </div>
+          <span style="opacity: 0.4;">|</span>
+          <a href="https://www.instagram.com/dreamdecors_uae?igsh=MTgzdndpcjNyNXZlYw==" target="_blank" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.25rem; transition: var(--transition-fast);" onmouseover="this.style.color='var(--color-gold-light)'" onmouseout="this.style.color='inherit'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span>@dreamdecors_uae</span>
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span>Call: <a href="tel:+971508771871" style="color: inherit; text-decoration: none;">+971 50 877 1871</a> | WhatsApp: <a href="https://wa.me/971508771871?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 877 1871</a> / <a href="https://wa.me/971508805513?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 880 5513</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-main-nav">
+      <div class="container nav-grid-container">
+        <!-- Left Side Links -->
+        <nav class="nav-side nav-left">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#philosophy" class="nav-link">Philosophy</a>
+        </nav>
+
+        <!-- Center Logo -->
+        <div class="logo-center">
+          <a href="#" class="logo-brand"><img src="assets/logo.jpg" alt="Dream Decors UAE" class="logo-img-src"></a>
+        </div>
+
+        <!-- Right Side Links -->
+        <nav class="nav-side nav-right">
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#testimonials" class="nav-link">Reviews</a>
+          <a href="#book" class="nav-link">Consultation</a>
+        </nav>
+
+        <!-- Mobile Navigation Menu Toggle -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO INTERFACE
+       ========================================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-overlay active" id="hero-bg-1"></div>
+    <div class="hero-bg-overlay" id="hero-bg-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag">Curated Romantic Opulence</span>
+        <h1 class="hero-title">Crafting Breathtaking <span>Wedding Masterpieces</span></h1>
+        <p class="hero-desc">We design, curate, and coordinate bespoke wedding decor architecture. From luxurious floral stages to romantic candlelight garden banquets, your dream backdrop awaits.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn btn-primary">Book Consultation</a>
+          <a href="#gallery" class="btn btn-outline">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES DISPLAY VIEW
+       ========================================== -->
+  <section id="services" class="section-padding" style="background: var(--bg-cream); border-bottom: 1px solid var(--border-delicate);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">Exquisite Event Curation</span>
+        <h2 class="section-title">Bespoke Services For Fine Celebrations</h2>
+        <p class="section-desc">From massive luxury gala architectures to intimate surprise dinners, we coordinate, style, and stage every single detail with extreme precision.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Corporate Events -->
+        <div class="service-card" data-service="corporate">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/corporate_led.jpg" alt="Corporate Events" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+            </div>
+            <h3 class="service-card-title">Corporate Events</h3>
+            <span class="service-card-subtitle">Luxury Gala & Activations</span>
+            <p class="service-card-desc">Bespoke staging for high-end brands, corporate annual gala dinners, product launches, VIP lounges, and prestigious corporate award nights.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 2. Birthday Party -->
+        <div class="service-card" data-service="birthday">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/birthday_jungle.jpg" alt="Birthday Party" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"></circle><path d="M12 15c0 3-2 4-2 6"></path><path d="M12 15l2 1.5"></path></svg>
+            </div>
+            <h3 class="service-card-title">Birthday Party</h3>
+            <span class="service-card-subtitle">Milestone Staging</span>
+            <p class="service-card-desc">Lavish milestone themed birthday atmospheres, customized floral walls, custom balloon arches, and bespoke birthday backdrops.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 3. Entertainment & Talent Booking -->
+        <div class="service-card" data-service="entertainment">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/av_stage_lighting.png" alt="Entertainment & Talent Booking" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </div>
+            <h3 class="service-card-title">Entertainment & Talent Booking</h3>
+            <span class="service-card-subtitle">Live Symphony & Shows</span>
+            <p class="service-card-desc">Curating international harpists, live bands, choreographic dance acts, and bespoke aerial shows to elevate your ceremony.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 4. Wedding -->
+        <div class="service-card" data-service="wedding">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/wedding_royal_stage.png" alt="Wedding" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="7"></circle><path d="M12 7V3"></path><path d="M10 4l2-2 2 2-2 2z"></path></svg>
+            </div>
+            <h3 class="service-card-title">Wedding</h3>
+            <span class="service-card-subtitle">Royal Mandap & Reception</span>
+            <p class="service-card-desc">Grand wedding mandaps, luxurious reception stage architectures, walkway drapes, crystal chandeliers, and custom floral paths.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 5. Outdoor Surprise & Intimate Moments -->
+        <div class="service-card" data-service="outdoor">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/outdoor_proposal.png" alt="Outdoor Surprise & Intimate Moments" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <h3 class="service-card-title">Outdoor Surprise & Intimate Moments</h3>
+            <span class="service-card-subtitle">Scenic Proposals & Cabanas</span>
+            <p class="service-card-desc">Romantic private cabana styling, beach proposal decorations, sunset candlelit dining, and anniversary setups under the stars.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 6. Furniture Rentals -->
+        <div class="service-card" data-service="furniture">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/rental_acrylic_chairs.png" alt="Furniture Rentals" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8"></path><path d="M1 11h22"></path><path d="M6 11V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5"></path></svg>
+            </div>
+            <h3 class="service-card-title">Furniture Rentals</h3>
+            <span class="service-card-subtitle">Luxury Gilded Collections</span>
+            <p class="service-card-desc">High-end luxury velvet sofas, custom golden dining tables, designer chairs, crystal glassware, and premium lounge pieces.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 7. Inauguration -->
+        <div class="service-card" data-service="inauguration">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/white_floral_entrance.png" alt="Inauguration" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89l1.515 8.11L12 17.5l-4.992 3.5 1.515-8.11"></path></svg>
+            </div>
+            <h3 class="service-card-title">Inauguration</h3>
+            <span class="service-card-subtitle">Grand Launch Activations</span>
+            <p class="service-card-desc">VIP ribbon-cutting structures, branded entrance walkway styling, custom floral arches, and royal guest hospitality staging.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 8. LED Screen & AV Setup -->
+        <div class="service-card" data-service="av">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/av_led_display.jpg" alt="LED Screen & AV Setup" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="service-card-title">LED Screen & AV Setup</h3>
+            <span class="service-card-subtitle">Scenic 3D Projection</span>
+            <p class="service-card-desc">Concert-grade outdoor LED screens, high-fidelity sound, ambient crystal lighting mapping, and architectural projection structures.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 9. Venue Selection -->
+        <div class="service-card" data-service="venue">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/portfolio_banquet.png" alt="Venue Selection" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <h3 class="service-card-title">Venue Selection</h3>
+            <span class="service-card-subtitle">Castle Gardens & Resorts</span>
+            <p class="service-card-desc">Through our trusted venue network, we provide access to luxury resorts, private desert estates, yacht cruises, Farmhouse and elegant ballrooms for unforgettable celebrations</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 10. Photo & Videography -->
+        <div class="service-card" data-service="photography">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/portfolio_stage.png" alt="Photo & Videography" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <h3 class="service-card-title">Photo & Videography</h3>
+            <span class="service-card-subtitle">Cinematic Editorial Capture</span>
+            <p class="service-card-desc">Award-winning lifestyle photographers, multi-angle cinematic wedding reels, high-fashion event coverage, and editorial video captures.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 11. Theme Based Cakes & Catering -->
+        <div class="service-card" data-service="catering">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/catering_buffet.jpg" alt="Theme Based Cakes & Catering" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="M3 10h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"></path><path d="M3 10c0-2.5 4-3.5 9-3.5s9 1 9 3.5"></path></svg>
+            </div>
+            <h3 class="service-card-title">Theme Based Cakes & Catering</h3>
+            <span class="service-card-subtitle">Sugar Sculptures & Gourmet</span>
+            <p class="service-card-desc">Pastry chefs sculpting customized multi-tiered theme cakes, gourmet molecular gastronomy showcases, and premium buffet styling.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 12. Gift Hampers -->
+        <div class="service-card" data-service="hampers">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/hamper_wedding.jpg" alt="Gift Hampers" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="14" rx="2" ry="2"></rect><path d="M12 5V3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v2"></path><path d="M12 5V3a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2"></path><path d="M12 8v14"></path><path d="M3 12h18"></path></svg>
+            </div>
+            <h3 class="service-card-title">Gift Hampers</h3>
+            <span class="service-card-subtitle">Velvet-Lined Souvenirs</span>
+            <p class="service-card-desc">Bespoke event favors, luxury velvet-lined boxes, handcrafted souvenirs, personalized calligraphic cards, and premium curated hampers.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 13. Other Ceremony Decor -->
+        <div class="service-card" data-service="ceremony">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/outdoor_baby_shower.jpg" alt="Other Ceremony Decor" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            </div>
+            <h3 class="service-card-title">Other Ceremony Decor</h3>
+            <span class="service-card-subtitle">Henna & Baby Showers</span>
+            <p class="service-card-desc">Specialized event design for traditional family occasions, traditional Henna nights, royal baby showers, and welcoming home decor.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+
+        <!-- 14. Invitation Designing -->
+        <div class="service-card" data-service="invitation">
+          <div class="service-card-bg-wrap">
+            <img class="service-card-bg" src="assets/philosophy_origin.jpg" alt="Invitation Designing" loading="lazy" />
+            <div class="service-card-overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg class="service-svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h3 class="service-card-title">Invitation Designing</h3>
+            <span class="service-card-subtitle">Velvet & Gold Foil Print</span>
+            <p class="service-card-desc">Custom calligraphy invitations, thick high-density cotton papers, gold-foil lettering, custom wax seals, and royal velvet envelopes.</p>
+            <span class="service-learn-more">Explore Bespoke Staging →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore More Button (Visible on Mobile Only) -->
+      <div class="services-explore-more-wrap">
+        <button id="services-explore-btn" class="btn btn-outline">Explore All Services</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PHILOSOPHY / ABOUT SECTION
+       ========================================== -->
+  <section id="philosophy" class="section-padding">
+    <div class="container">
+      <div class="philosophy-grid">
+        
+        <div class="philosophy-text">
+          <span class="section-tagline">Our Origin Story</span>
+          <h2 class="section-title">Crafting Unforgettable Experiences Since 2017</h2>
+          <p>Born from a passion for celebration and creativity, our event management company has been crafting unforgettable experiences since 2017. Whether it's a cozy birthday party, a lavish wedding, a high-profile corporate event, or a vibrant celebration of any kind, we bring creativity, precision, and heart to every detail.</p>
+          <p>Our services span across catering, event furniture rentals, selecting venues and complete event styling—ensuring every moment feels seamless and spectacular. With a passion for personalization and a commitment to excellence, we turn your vision into reality, one celebration at a time.</p>
+          
+          <div class="philosophy-features">
+            <div class="feature-box">
+              <span class="feature-num">9+</span>
+              <span class="feature-title">Years Curated</span>
+              <p class="feature-desc">Executing bespoke experiences across luxury estates.</p>
+            </div>
+            <div class="feature-box">
+              <span class="feature-num">240+</span>
+              <span class="feature-title">Dream Celebrations</span>
+              <p class="feature-desc">Individually tailored architectures and scenery stages.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-image-collage">
+          <div class="collage-frame"></div>
+          <img src="assets/philosophy_origin.jpg" alt="Traditional Ceremony Staging" class="collage-img">
+          <div class="collage-accent"></div>
+        </div>
+
+      </div>
+
+      <!-- Row 2: Founders Spotlight -->
+      <div class="founders-spotlight">
+        <div class="founders-grid">
+          <div class="founders-statement">
+            <span class="section-tagline">Creative Leadership</span>
+            <h3 class="founders-title">Founders — Abdul Shahid & Mehnaz Hakkim</h3>
+            <p class="founders-lead">“At Dream Decors, we believe every celebration deserves to be unforgettable. We don’t just decorate — we create memories.”</p>
+            <p>Founded with a passion for creativity and a love for detail, we specialize in transforming ordinary spaces into extraordinary experiences. Whether it's a whimsical birthday party, a luxurious wedding, or a corporate gala, our team brings your vision to life with elegance, precision, and heart.</p>
+          </div>
+          
+          <div class="founders-about-card">
+            <p>From enchanting themes like butterflies and sparkles to bold jungle adventures and chic black-and-pink palettes, we curate every element to reflect your story.</p>
+            <p>Our services include full event planning, catering, furniture rentals, and custom decor — all designed to make your moments magical. With a meticulous eye for detail and a commitment to excellence, Dream Decors turns your dreams into dazzling reality.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PORTFOLIO VIEW (DYNAMIC FILTER GRID)
+       ========================================== -->
+  <section id="gallery" class="section-padding" style="background: var(--bg-champagne); border-top: 1px solid var(--border-delicate); border-bottom: 1px solid var(--border-delicate);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">Our Crafted Masterpieces</span>
+        <h2 class="section-title">A Symphony of Floral & Staging Artistry</h2>
+        <p class="section-desc">Inspect our recent signature installations. Each celebration is custom designed with premium accents matching our clients' style.</p>
+      </div>
+
+      <!-- Filter Navigation -->
+      <div class="portfolio-tabs" id="portfolio-tabs-container">
+        <button class="portfolio-tab active" data-filter="all">All Decor</button>
+        <button class="portfolio-tab" data-filter="entrances">Grand Entrances</button>
+        <button class="portfolio-tab" data-filter="corporate">Corporate Decors</button>
+        <button class="portfolio-tab" data-filter="birthday">Birthday Parties</button>
+        <button class="portfolio-tab" data-filter="furniture">Event Furniture Rentals</button>
+        <button class="portfolio-tab" data-filter="catering">Cakes & Catering</button>
+        <button class="portfolio-tab" data-filter="av">LED Screen & AV Setup</button>
+        <button class="portfolio-tab" data-filter="outdoor">Outdoor Surprise & Intimate Moments</button>
+        <button class="portfolio-tab" data-filter="hampers">Gift Hampers</button>
+      </div>
+
+      <!-- Gallery Grid (Rendered dynamically by js/app.js) -->
+      <div class="portfolio-grid" id="portfolio-grid-container">
+        <!-- Javascript renders cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS CAROUSEL
+       ========================================== -->
+  <section id="testimonials" class="section-padding testimonials-section">
+    <div class="container">
+      <div class="testimonial-frame">
+        <div class="testimonial-card google-review-card" id="testimonial-card-container">
+          <div class="google-review-header">
+            <div class="google-avatar" id="test-avatar" style="background: #34A853;">T</div>
+            <div class="google-reviewer-info">
+              <div class="google-reviewer-name" id="test-author">Tbn 56</div>
+              <div class="google-reviewer-meta" id="test-meta">4 reviews • 1 photo</div>
+            </div>
+            <div class="google-logo-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5.04c1.67 0 3.2.58 4.38 1.71l3.27-3.27C17.68 1.54 14.97 1 12 1 7.35 1 3.39 3.66 1.41 7.54l3.89 3.01C6.23 7.6 8.89 5.04 12 5.04z"/><path fill="#4285F4" d="M23.49 12.27c0-.81-.07-1.59-.2-2.34H12v4.44h6.44c-.28 1.47-1.11 2.71-2.36 3.55l3.66 2.84c2.14-1.97 3.75-4.87 3.75-8.49z"/><path fill="#FBBC05" d="M5.3 15.02c-.24-.71-.38-1.47-.38-2.27s.14-1.56.38-2.27L1.41 7.47C.51 9.28 0 11.28 0 13.4s.51 4.12 1.41 5.93l3.89-3.31z"/><path fill="#34A853" d="M12 23c3.24 0 5.97-1.07 7.96-2.91l-3.66-2.84c-1.01.68-2.3 1.09-4.3 1.09-3.11 0-5.77-2.56-6.7-5.51L1.41 15.84C3.39 19.72 7.35 23 12 23z"/></svg>
+            </div>
+          </div>
+          <div class="google-review-stars">
+            <span class="star-rating">★★★★★</span>
+            <span class="review-time" id="test-time">3 months ago</span>
+          </div>
+          <div class="testimonial-quote" id="test-quote">“Huge shoutout to the decor team! 🔥 They killed it, exceeded our expectations, and made our day super special 🙏”</div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonial-dots-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+
+      <div class="testimonial-more-reviews" style="text-align: center; margin-top: 7rem;">
+        <a href="https://g.page/r/CfCE4_qbC9QmEBM" target="_blank" class="btn btn-outline" style="gap: 0.5rem; text-decoration: none;">
+          <span>More Reviews on Google</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BOOKING CONSULTATION WIZARD
+       ========================================== -->
+  <section id="book" class="section-padding booking-section">
+    <div class="container">
+      <div class="booking-layout">
+        
+        <div class="booking-text">
+          <span class="section-tagline">Secure Your Date</span>
+          <h2>Curate Your Masterpiece</h2>
+          <p>Ready to translate your romance into physical splendor? Select an open date on our coordinator dashboard and book your bespoke floral & scenic design consultation.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon" style="display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.15);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: scaleX(-1);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-info">
+                <span>Let's Make Your Event Unforgettable</span>
+                <span style="font-size: 0.95rem; margin-top: 0.2rem; display: flex; align-items: center; gap: 0.4rem;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; flex-shrink: 0; transform: scaleX(-1);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <a href="tel:+971508771871" style="color: inherit; text-decoration: none;">+971 50 877 1871</a>
+                </span>
+                <span style="font-size: 0.95rem; margin-top: 0.15rem; display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="#25D366" style="display: inline-block; vertical-align: middle; flex-shrink: 0;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.023-5.115-2.887-6.98-1.866-1.865-4.343-2.888-6.983-2.89-5.439 0-9.865 4.425-9.868 9.87-.001 1.767.461 3.493 1.34 5.021l-.988 3.61 3.702-.972zm11.392-5.74c-.266-.134-1.58-.78-1.822-.868-.243-.09-.419-.134-.596.133-.176.268-.68.868-.834 1.04-.153.174-.307.195-.573.061-.266-.133-1.127-.415-2.146-1.325-.793-.707-1.328-1.582-1.484-1.849-.156-.267-.016-.411.118-.544.12-.119.266-.312.4-.467.133-.156.177-.267.266-.445.09-.177.044-.333-.022-.467-.066-.134-.596-1.436-.818-1.968-.216-.52-.453-.448-.622-.457-.16-.008-.344-.01-.527-.01-.184 0-.484.07-.738.347-.253.278-.968.947-.968 2.31 0 1.361.99 2.678 1.128 2.868.138.189 1.947 2.973 4.717 4.168.659.284 1.174.454 1.576.581.662.21 1.264.18 1.74.109.53-.08 1.58-.646 1.802-1.238.222-.593.222-1.101.156-1.209-.067-.108-.243-.174-.509-.309z"/></svg>
+                  <a href="https://wa.me/971508771871?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 877 1871</a>, <a href="https://wa.me/971508805513?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 880 5513</a>
+                </span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" style="display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.15);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-info">
+                <span>Email</span>
+                <span>dreamdecorsuae@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATEFUL FORM CONTAINER -->
+        <div class="booking-form-box" id="booking-box-container">
+          <form id="consultation-form">
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label class="form-label" for="form-name">Your Full Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-date">Event Date</label>
+                <input type="date" id="form-date" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-venue">Selected Venue</label>
+                <input type="text" id="form-venue" class="form-input" placeholder="e.g. Helix Grand Gardens" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-scale">Estimated Guest Size</label>
+                <select id="form-scale" class="form-select">
+                  <option value="Intimate Scenic">Intimate Scenic (&lt;100 Guests)</option>
+                  <option value="Classic Elegance" selected>Classic Elegance (100-250 Guests)</option>
+                  <option value="Royal Opulence">Royal Opulence (&gt;250 Guests)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-styling">Service Preference</label>
+                <select id="form-styling" class="form-select">
+                  <option value="entrances" selected>Premium Wedding Entrance</option>
+                  <option value="corporate">Corporate Gala Styling</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="anniversary">Anniversary Theme Decors</option>
+                  <option value="furniture">Luxury Furniture Rentals</option>
+                  <option value="catering">Gourmet Cakes & Catering</option>
+                  <option value="av">LED Screen & AV Setup</option>
+                  <option value="outdoor">Outdoor Surprise & Intimate Moments</option>
+                  <option value="hampers">Bespoke Gift Hampers</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="form-message">Manifesto & Custom Requests</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tell us about your dream mandap stage, color themes, or floral visions..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Publish Consultation Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo-brand"><img src="assets/logo.jpg" alt="Dream Decors UAE" class="logo-img-src"></a>
+        <p>Designing physical architectures of luxury, romance, and bespoke beauty for exclusive celebrations.</p>
+      </div>
+
+      <div class="footer-column">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#home" style="color: inherit; text-decoration: none; display: block;">Home</a></li>
+          <li class="footer-link"><a href="#services" style="color: inherit; text-decoration: none; display: block;">Services</a></li>
+          <li class="footer-link"><a href="#philosophy" style="color: inherit; text-decoration: none; display: block;">Philosophy</a></li>
+          <li class="footer-link"><a href="#gallery" style="color: inherit; text-decoration: none; display: block;">Gallery</a></li>
+          <li class="footer-link"><a href="#testimonials" style="color: inherit; text-decoration: none; display: block;">Reviews</a></li>
+          <li class="footer-link"><a href="#book" style="color: inherit; text-decoration: none; display: block;">Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h5>Contact</h5>
+        <ul class="footer-links">
+          <li class="footer-link contact-white-highlight">dreamdecorsuae@gmail.com</li>
+          <li class="footer-link contact-white-highlight">Call: <a href="tel:+971508771871" style="color: inherit; text-decoration: none;">+971 50 877 1871</a></li>
+          <li class="footer-link contact-white-highlight">WhatsApp: <a href="https://wa.me/971508771871?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 877 1871</a>, <a href="https://wa.me/971508805513?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" style="color: inherit; text-decoration: none;">+971 50 880 5513</a></li>
+          <li class="footer-link">Dubai, UAE</li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-instagram-qr">
+        <h5>Scan to Follow</h5>
+        <a href="https://www.instagram.com/dreamdecors_uae?igsh=MTgzdndpcjNyNXZlYw==" target="_blank" class="instagram-qr-link" title="Click to open Instagram">
+          <img src="assets/instagram_qr.png" alt="Scan to Follow Instagram" class="instagram-qr-img">
+        </a>
+        <a href="https://www.instagram.com/dreamdecors_uae?igsh=MTgzdndpcjNyNXZlYw==" target="_blank" class="qr-label">@dreamdecors_uae</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Dream Decors Event Management. All exclusive rights reserved.</span>
+      <span>Premium Romance & Opulence Staging.</span>
+    </div>
+  </footer>
+
+  <!-- Floating Call Concierge Widget (Bottom-Left Corner) -->
+  <div class="floating-concierge" id="floating-call-widget">
+    <div class="concierge-trigger" id="call-trigger-btn" aria-label="Call Concierge">
+      <span class="trigger-icon" style="transform: none; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: scaleX(-1);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      </span>
+    </div>
+    <div class="concierge-popup" id="call-popup-menu">
+      <div class="popup-header">
+        <h5>Bespoke Concierge</h5>
+        <p>Direct voice line with our design curators</p>
+      </div>
+      <div class="popup-options">
+        <a href="tel:+971508771871" class="popup-item popup-call">
+          <span class="popup-icon" style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--color-gold-light);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: scaleX(-1);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </span>
+          <div class="popup-text">
+            <span>Direct Call</span>
+            <span>+971 50 877 1871</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Concierge Widget (Stacked Above Call Widget) -->
+  <div class="floating-concierge floating-whatsapp-widget" id="floating-whatsapp-widget">
+    <div class="concierge-trigger whatsapp-trigger" id="whatsapp-trigger-btn" aria-label="WhatsApp Concierge">
+      <span class="trigger-icon" style="transform: none; color: #ffffff; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.023-5.115-2.887-6.98-1.866-1.865-4.343-2.888-6.983-2.89-5.439 0-9.865 4.425-9.868 9.87-.001 1.767.461 3.493 1.34 5.021l-.988 3.61 3.702-.972zm11.392-5.74c-.266-.134-1.58-.78-1.822-.868-.243-.09-.419-.134-.596.133-.176.268-.68.868-.834 1.04-.153.174-.307.195-.573.061-.266-.133-1.127-.415-2.146-1.325-.793-.707-1.328-1.582-1.484-1.849-.156-.267-.016-.411.118-.544.12-.119.266-.312.4-.467.133-.156.177-.267.266-.445.09-.177.044-.333-.022-.467-.066-.134-.596-1.436-.818-1.968-.216-.52-.453-.448-.622-.457-.16-.008-.344-.01-.527-.01-.184 0-.484.07-.738.347-.253.278-.968.947-.968 2.31 0 1.361.99 2.678 1.128 2.868.138.189 1.947 2.973 4.717 4.168.659.284 1.174.454 1.576.581.662.21 1.264.18 1.74.109.53-.08 1.58-.646 1.802-1.238.222-.593.222-1.101.156-1.209-.067-.108-.243-.174-.509-.309z"/></svg>
+      </span>
+    </div>
+    <div class="concierge-popup" id="whatsapp-popup-menu">
+      <div class="popup-header">
+        <h5>WhatsApp Concierge</h5>
+        <p>Choose a channel to connect instantly</p>
+      </div>
+      <div class="popup-options">
+        <a href="https://wa.me/971508771871?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" class="popup-item popup-whatsapp">
+          <span class="popup-icon" style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: #25D366;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.023-5.115-2.887-6.98-1.866-1.865-4.343-2.888-6.983-2.89-5.439 0-9.865 4.425-9.868 9.87-.001 1.767.461 3.493 1.34 5.021l-.988 3.61 3.702-.972zm11.392-5.74c-.266-.134-1.58-.78-1.822-.868-.243-.09-.419-.134-.596.133-.176.268-.68.868-.834 1.04-.153.174-.307.195-.573.061-.266-.133-1.127-.415-2.146-1.325-.793-.707-1.328-1.582-1.484-1.849-.156-.267-.016-.411.118-.544.12-.119.266-.312.4-.467.133-.156.177-.267.266-.445.09-.177.044-.333-.022-.467-.066-.134-.596-1.436-.818-1.968-.216-.52-.453-.448-.622-.457-.16-.008-.344-.01-.527-.01-.184 0-.484.07-.738.347-.253.278-.968.947-.968 2.31 0 1.361.99 2.678 1.128 2.868.138.189 1.947 2.973 4.717 4.168.659.284 1.174.454 1.576.581.662.21 1.264.18 1.74.109.53-.08 1.58-.646 1.802-1.238.222-.593.222-1.101.156-1.209-.067-.108-.243-.174-.509-.309z"/></svg>
+          </span>
+          <div class="popup-text">
+            <span>WhatsApp (Primary)</span>
+            <span>+971 50 877 1871</span>
+          </div>
+        </a>
+        <a href="https://wa.me/971508805513?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" class="popup-item popup-whatsapp">
+          <span class="popup-icon" style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: #25D366;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.953-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.023-5.115-2.887-6.98-1.866-1.865-4.343-2.888-6.983-2.89-5.439 0-9.865 4.425-9.868 9.87-.001 1.767.461 3.493 1.34 5.021l-.988 3.61 3.702-.972zm11.392-5.74c-.266-.134-1.58-.78-1.822-.868-.243-.09-.419-.134-.596.133-.176.268-.68.868-.834 1.04-.153.174-.307.195-.573.061-.266-.133-1.127-.415-2.146-1.325-.793-.707-1.328-1.582-1.484-1.849-.156-.267-.016-.411.118-.544.12-.119.266-.312.4-.467.133-.156.177-.267.266-.445.09-.177.044-.333-.022-.467-.066-.134-.596-1.436-.818-1.968-.216-.52-.453-.448-.622-.457-.16-.008-.344-.01-.527-.01-.184 0-.484.07-.738.347-.253.278-.968.947-.968 2.31 0 1.361.99 2.678 1.128 2.868.138.189 1.947 2.973 4.717 4.168.659.284 1.174.454 1.576.581.662.21 1.264.18 1.74.109.53-.08 1.58-.646 1.802-1.238.222-.593.222-1.101.156-1.209-.067-.108-.243-.174-.509-.309z"/></svg>
+          </span>
+          <div class="popup-text">
+            <span>WhatsApp (Secondary)</span>
+            <span>+971 50 880 5513</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Beskoke Event Service Modal Overlay
+       ========================================== -->
+  <div id="service-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-body">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Premium Lightbox Gallery Modal Overlay
+       ========================================== -->
+  <div id="lightbox-modal" class="lightbox-overlay">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-btn lightbox-prev" id="lightbox-prev-btn" aria-label="Previous Image">&lsaquo;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Gallery Preview" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-btn lightbox-next" id="lightbox-next-btn" aria-label="Next Image">&rsaquo;</button>
+  </div>
+
+  <!-- Elegant Scroll Header coordinator -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.main-header');
+      if (header) {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+    });
+  </script>
+
+  <!-- ==========================================
+       MOBILE OVERLAY MENU
+       ========================================== -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+    <button class="mobile-menu-close" id="mobile-menu-close-btn" aria-label="Close Menu">&times;</button>
+    <nav class="mobile-menu-links">
+      <a href="#home" class="mobile-menu-link">Home</a>
+      <a href="#services" class="mobile-menu-link">Services</a>
+      <a href="#philosophy" class="mobile-menu-link">Philosophy</a>
+      <a href="#gallery" class="mobile-menu-link">Gallery</a>
+      <a href="#testimonials" class="mobile-menu-link">Reviews</a>
+      <a href="#book" class="mobile-menu-link">Consultation</a>
+    </nav>
+    <div class="mobile-menu-footer" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <a href="tel:+971508771871" class="mobile-menu-contact-btn popup-call" style="margin: 0; width: 100%;">📞 Call Concierge</a>
+      <a href="https://wa.me/971508771871?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" class="mobile-menu-contact-btn popup-whatsapp" style="margin: 0; width: 100%;">💬 WhatsApp 1</a>
+      <a href="https://wa.me/971508805513?text=Hello%20Dream%20Decors,%20I%20would%20like%20to%20inquire%20about%20your%20bespoke%20event%20decoration%20services!" target="_blank" class="mobile-menu-contact-btn popup-whatsapp" style="margin: 0; width: 100%;">💬 WhatsApp 2</a>
+    </div>
+  </div>
+
+  <!-- Load Local Modules -->
+  <script src="js/confetti.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
