@@ -603,8 +603,77 @@ const App = {
 
     if (card) {
       card.style.cursor = 'pointer';
-      card.addEventListener('click', () => {
+      this.touchState = { isSwiping: false };
+
+      card.addEventListener('click', (e) => {
+        if (this.touchState && this.touchState.isSwiping) {
+          // Reset state and block navigation
+          this.touchState.isSwiping = false;
+          return;
+        }
         window.open('https://g.page/r/CfCE4_qbC9QmEBM/review', '_blank');
+      });
+
+      // Horizontal swipe navigation support for mobile devices
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let touchEndX = 0;
+      let touchEndY = 0;
+
+      card.addEventListener('touchstart', (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          touchStartX = e.changedTouches[0].screenX;
+          touchStartY = e.changedTouches[0].screenY;
+        }
+        if (this.touchState) this.touchState.isSwiping = false;
+      }, { passive: true });
+
+      card.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          touchEndX = e.changedTouches[0].screenX;
+          touchEndY = e.changedTouches[0].screenY;
+          handleSwipe();
+        }
+      }, { passive: true });
+
+      const handleSwipe = () => {
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+
+        // Ensure horizontal swipe motion dominates vertical scrolling and meets a threshold
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+          if (this.touchState) this.touchState.isSwiping = true;
+          if (diffX > 0) {
+            // Swipe right -> load previous review
+            this.state.activeTestimonial = (this.state.activeTestimonial - 1 + TESTIMONIALS.length) % TESTIMONIALS.length;
+          } else {
+            // Swipe left -> load next review
+            this.state.activeTestimonial = (this.state.activeTestimonial + 1) % TESTIMONIALS.length;
+          }
+          this.renderTestimonials();
+          this.resetTestimonialsTimer();
+        }
+      };
+    }
+
+    const prevBtn = document.getElementById('testimonial-prev-btn');
+    const nextBtn = document.getElementById('testimonial-next-btn');
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.state.activeTestimonial = (this.state.activeTestimonial - 1 + TESTIMONIALS.length) % TESTIMONIALS.length;
+        this.renderTestimonials();
+        this.resetTestimonialsTimer();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.state.activeTestimonial = (this.state.activeTestimonial + 1) % TESTIMONIALS.length;
+        this.renderTestimonials();
+        this.resetTestimonialsTimer();
       });
     }
 
