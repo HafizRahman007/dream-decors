@@ -695,23 +695,46 @@ button, input, select, textarea {
    TESTIMONIALS CAROUSEL
    ========================================================================== */
 .testimonials-section {
-  background: var(--bg-champagne);
+  position: relative;
+  background: linear-gradient(135deg, #FDFBF7 0%, #EDE0D4 100%);
+  overflow: hidden;
   border-top: 1px solid var(--border-delicate);
   border-bottom: 1px solid var(--border-delicate);
+}
+
+.testimonials-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 162, 102, 0.22) 0%, rgba(200, 162, 102, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.testimonials-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .testimonial-frame {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  min-height: 260px;
+  height: 390px;
 }
 
 .testimonial-card {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 100%;
+  height: 100%;
   text-align: center;
   animation: testimonial-fade 0.6s ease-out forwards;
 }
@@ -784,7 +807,7 @@ button, input, select, textarea {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 .dot {
@@ -1147,9 +1170,7 @@ button, input, select, textarea {
     padding: 0 1.25rem !important;
     box-sizing: border-box !important;
   }
-  .testimonial-frame {
-    min-height: 320px !important;
-  }
+
   .modal-content {
     height: 60vh !important;
     max-height: 60vh !important;
@@ -2500,9 +2521,6 @@ button, input, select, textarea {
   .lightbox-caption strong {
     font-size: 1rem;
   }
-  .testimonial-frame {
-    min-height: 320px !important;
-  }
 }
 
 /* ==========================================================================
@@ -2608,7 +2626,7 @@ button, input, select, textarea {
   }
 
   .testimonial-dots {
-    margin-top: 5rem !important;
+    margin-top: 2.5rem !important;
   }
 }
 
@@ -2617,6 +2635,7 @@ button, input, select, textarea {
   .testimonial-frame {
     padding: 0 55px !important;
     box-sizing: border-box !important;
+    height: 410px !important;
   }
 
   .testimonial-prev {

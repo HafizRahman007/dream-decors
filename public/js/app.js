@@ -57,8 +57,8 @@ const PORTFOLIO_ITEMS = [
     id: 13,
     title: 'Gourmet Cakes & Catering',
     category: 'catering',
-    image: 'assets/catering_buffet.jpg',
-    images: ['assets/catering_buffet.jpg', 'assets/catering_cake.jpg'],
+    image: 'assets/catering_cake.jpg',
+    images: ['assets/catering_cake.jpg', 'assets/catering_buffet.jpg'],
     desc: 'Artisanal culinary staging featuring opulent multi-tiered theme cakes and premium gourmet buffets styled for elite celebrations.'
   },
   {
@@ -114,6 +114,15 @@ const TESTIMONIALS = [
     time: "a month ago",
     avatarLetter: "L",
     avatarBg: "#7B1FA2" // Purple
+  },
+  {
+    quote: "Amazing decor for my sister’s birthday! The setup was beautiful, classy, and done on time. Very professional team and great attention to detail. Would definitely recommend Dream Decors Events",
+    author: "mehjabeen ebinu",
+    rating: 5,
+    meta: "6 reviews • 3 photos",
+    time: "3 months ago",
+    avatarLetter: "M",
+    avatarBg: "#EA4335" // Red
   }
 ];
 
